@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = 13;
+        console.log("value is "+x);
+       let y = x++ + ++x - --x + x-- - ++x - --x;
+       console.log("answer is "+y)  //ans=1;
+
+
+       let a = 10;
+       console.log("value is "+a);
+       let b;
+       b = a++ + ++a - --a + a-- + ++b - ++b;
+       console.log("answer is "+b);  //ans=NaN
+
+       let i = 30;
+       console.log("value is "+i)
+       let j = i++ + ++i - --i + i-- + --i + ++i;
+       console.log("answer is "+j);  //ans=121
+    </script>
+</body>
+
+</html>
